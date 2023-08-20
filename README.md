@@ -14,7 +14,7 @@ Welcome to the **UniversityStuff** repository! This is where I store all the cod
 
 ## Description
 
-In this repository I've organized my university coding class materials to help me keep track of what I've learned and accomplished. Each folder corresponds to a specific course or topic, containing code snippets, assignments, and possibly some small projects.
+In this repository, I've organized my university coding class materials to help me keep track of what I've learned and accomplished. Each folder corresponds to a specific course or topic, containing code snippets, assignments, and possibly some small projects.
 
 ## Folder Structure
 
