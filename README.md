@@ -1,6 +1,6 @@
 # UniversityStuff Repository
 
-![UniversityStuff Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Herb_Uniwersytetu_Jagiello%C5%84skiego.svg/300px-Herb_Uniwersytetu_Jagiello%C5%84skiego.svg.png){:width="200px"}
+![UniversityStuff Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Herb_Uniwersytetu_Jagiello%C5%84skiego.svg/300px-Herb_Uniwersytetu_Jagiello%C5%84skiego.svg.png){:width="100px"}
 
 Welcome to the **UniversityStuff** repository! This is where I store all the code and projects I've worked on during my university coding classes. Here, you'll find a collection of assignments, projects, and coding exercises that reflect my journey through various courses.
 
