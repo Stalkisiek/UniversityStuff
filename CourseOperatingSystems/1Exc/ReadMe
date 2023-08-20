@@ -1,0 +1,32 @@
+##URUCHAMIANIE
+Aby wywolac konkretny program uzywamy: $make run{1,2,3,4,5} <- gdzie zawartosc {} to numer popdunktu ALE a = 1; b = 2... 
+Przykladowo: "$make run1" <- tworzy plik wykonywalny i go uruchamia, ktory jest rozwiazaniem dla zadania a
+
+##OPIS PROGRAMOW
+a. W programie a.c znajduje sie zwykla funkcja (uzywana w dalszych zadaniach), ktora wypisuje zadane informacje o akutalnym procesie 
+
+b. 3 krotnie wywoluje fork() (razem z obsluga potencjalnego bledu) i wypisuje ids kolejno tworzonych procesow 
+
+c. Podobnie jak w b. Wywoluje fork() 3-krotnie. Roznica jest brak funkcji wait(), oraz "bledne" umieszczenie "sleep" ktore powoduje, ze procesy potomne sa porzucane i dostaja wartosci (init lub systemd (u mnie dostja systemd))
+
+d. Podobnie jak w b i c. Tyle ze w "dobrym" miejscu sleep(), ktore z kolejnymi iteracjami sie zwieksza, pozwala na pogrupowanie procesow wzgledem generacji od najstarszych do najnowszych
+-drzewo genealogiczne- Stworzylem kopiujac strukture dla przykladowych danych z pstree i uzupelniajac o potrzebne dla zadania informacje (tutaj w przykladowych danych jako lidera grupy ustawilem proces pierwotny tj. pierwszy "d.x")
+
+e. Podobnie jak w e, tyle ze dla kazdego procesu ustawiany jest lider grupy jako swoje PID (wraz z obsluga potencjalnego bledu)
+-ile postanie procesow- 
+fork() przy wywolaniu tworzy kopie siebie samego, oraz proces potomnych. Tym samym latwo z tego wyciagnac ze ostatczna liczba procesow to 2^n. 
+Co prawda z tego co rozumiem (i co przetestowalem) procesy tworzone sa troche na bok, a tym samym poprawne drzewo dla przykladowych 3 wykonan funkcji fork() to: 
+1
+├── 2
+│   ├── 4
+│   └── 5
+├── 3
+│   ├── 6
+│   └── 7
+└── 8
+     
+        1
+    ┌───┴───┐
+    1         2
+┌───┴───┐ ┌───┴───┐   
+1       3 2       4

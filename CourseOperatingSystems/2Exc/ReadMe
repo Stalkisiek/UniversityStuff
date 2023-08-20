@@ -1,0 +1,21 @@
+##URUCHAMIANIE
+Aby wywolac program uzywamy: $make run1
+Przykladowo: "$make run1" <- tworzy plik wykonywalny i go uruchamia, ktory jest rozwiazaniem dla zadania 2
+
+##OPIS PROGRAMU
+W programie b.c znajduje sie kod programu sluzacy do wypisania ID obecnego procesu.
+
+W programie a.c zachodzi 3 krotne wywolanie funkcji fork(), ktore tworza procesy potomne. W kazdym z nich uzywamy funkcji execl, ktora nadpisuje PID procesu dziecka i na jego miejsce uruchamia plik wykonywalny (tj. "b.x"). Uwzgledniona tu zostala obsluga bledow dla funkcji fork() oraz execl().
+
+##PYTANIE DO ZADANIA
+Przy n-krotnym wywolaniu funkcji fork() i zastosowaniu funkcji execl z tego co rozumiem tworzy sie n procesow. Jest to spowodowane tym, ze kazde dziecko zostaje natychmiastowo zastapione programem "b.x", przez co fork sie nie "zapetla" i nie tworzy drzewa binarnego. Przez kolejne iteracje proces macierzysty jest przepisywany i ponownie proces potomny zostaje zastapiony. Ostateczna liczba procesow to n+1, gdzie n to liczba wywolan funkcji fork(), istnieje n procesow "b.x" i jeden proces pierwotny
+
+make(10698)───a.x(10699)─┬─b.x(10700)
+                         ├─b.x(10701)
+                         └─b.x(10702)
+
+        a(10699)
+    ┌───┴──  ─┐
+    a(10699) b(10700)
+┌───┴──   ─┐   
+a(10699) b(10701))      

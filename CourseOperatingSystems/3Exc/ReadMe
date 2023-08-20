@@ -1,0 +1,28 @@
+Program 1. 
+
+Aby odpowiednio uruchomic program 1 nalezy skorzystac ze struktury: 
+$make run1 {Obsluga_sygnalu} {Sygnal} 
+Odpowiednie wartosci dla {Oblsuga_sygnalu} 
+1 - wykonac operacje domyslna 
+2 - zignorowac sygnal 
+3 - wykonac akcje zdefiniowana przez uzytkownika 
+
+przykladowo:
+$make run1 2 2 
+Program wywola sygnal dla danego procesu o numerze 2, ktorego nastepnie zignoruje. 
+
+W ramach pomocy zdefiniowalem program signalChecker ktorego mozna wywolac: 
+$make check 
+Program ten wyswietla id konkretnych sygnalow i ich opis  
+
+
+Program 2. 
+
+Aby odpowiednio uruchomic program 2 nalezy zrobic dokladnie to samo co sie robilo w przypadku programu 1: 
+$make run2 {Obsluga_sygnalu} {Sygnal}
+Odpowiednie wartosci dla {Oblsuga_sygnalu}
+1 - wykonac operacje domyslna
+2 - zignorowac sygnal
+3 - wykonac akcje zdefiniowana przez uzytkownika
+
+Program dziala wedlug opisu podanego w pliku .cpp. Proces macierzysty wysyla sygnal SIGINT do a.x, ale mozna to odpowiednio dopasowac do swoich preferencji

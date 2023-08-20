@@ -1,0 +1,3 @@
+Uruchomienie programu: make run 
+
+Opis programu: Program tworzy proces potomny, który czyta dane z pliku wejściowego i przesyła je do procesu macierzystego przez potok. Proces macierzysty zapisuje dane do pliku wyjściowego. Procesy powinny działać współbieżnie, tzn. proces macierzysty powinien zapisywać dane do pliku wyjściowego w miarę ich otrzymywania od procesu potomnego. Proces potomny powinien przesyłać dane do procesu macierzystego w miarę ich czytania z pliku wejściowego. Procesy powinny działać do momentu przesłania wszystkich danych. Proces macierzysty powinien czekać na zakończenie procesu potomnego.
