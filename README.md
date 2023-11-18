@@ -56,5 +56,3 @@ This repository is not licensed for open-source contributions or distribution. A
 ---
 
 Happy coding!
-Mateusz Migdał
-matmigdal@gmail.com****
