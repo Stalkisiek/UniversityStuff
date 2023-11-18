@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <form action="/helow" method="">
+        <p>
+            <label for="tekst">Write some text</label>
+            <input type="text" id="tekst" name="tekst" placeholder="text">
+        </p>
+        <p>
+            <label for="password">Write ur password</label>
+            <input type="password" id="password" placeholder="password">
+        </p>
+        <p>
+            <label for="number">Write ur favourite number</label>
+            <input type="number" id="number" placeholder="number">
+        </p>
+        <p>
+            <label for="check">Are u ready?</label>
+            <input type="checkbox" id="check">
+        </p>
+        <p>
+            <button type="submit">Click here!</button>
+            <br>
+            <button type="button">Dont click here!</button>
+        </p>
+    </form>
+    <hr>
+    <h2>Searching random stuff on internet</h2>
+
+    <form action="https://www.google.com/search">
+        <label for="q">
+            <h3>Search google</h3>
+        </label>
+        <input type="text" name="q" id="q">
+        <button>Google search</button>
+    </form>
+    <h3>Search yt</h3>
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="q">
+        <button>Click me!</button>
+    </form>
+
+    <form action="">
+        <p>
+            <label for="temp">U want to check?</label>
+            <input type="checkbox" name="temp" id="temp" checked>
+        </p>
+        <br>
+        <p>
+            <label for="cats">What cat do u want?</label>
+            <br>
+            <label for="black">Black</label>
+            <input type="radio" name="cats" id="black" value="black">
+            <br>
+            <label for="black">White</label>
+            <input type="radio" name="cats" id="white" value="white">
+            <br>
+            <label for="black">Both</label>
+            <input type="radio" name="cats" id="both" value="both">
+            <br>
+            <button>Decide!</button>
+        </p>
+        <br>
+        <p>
+            <label for="country">Chose ur warior</label>
+            <select name="Country" id="country">
+                <option value="none" selected>--Chose--</option>
+                <option value="poland">Poland</option>
+                <option value="germany">Germany</option>
+            </select>
+            <input type="range" name="" id="" min="10" max="15">
+            <button>Click me!</button>
+        </p>
+        <p>
+            <textarea name="temp" id="" cols="30" rows="10" placeholder="Write something here..."></textarea>
+            <button>Hi there!</button>
+        </p>
+    </form>
+
+    <p>
+    <form action="http://www.name.com">
+        <div>
+            <label for="name">Podaj swoje imie</label>
+            <input type="text" name="name" id="name" placeholder="Write ur name" minlength="3" required>
+        </div>
+        <button>Click!</button>
+    </form>
+    </p>
+</body>
+
+</html>
