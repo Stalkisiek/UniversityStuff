@@ -1,0 +1,47 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1 {
+    text-align: center;
+}
+.container {
+    background-color: #003049;
+    width: 90%;
+    /* height: 500px; */
+    margin: 0 auto;
+    border: 5px solid #003049;
+    display: flex;
+    flex-direction: row;
+}
+
+.container div{
+    width: 200px;
+    height: 200px;
+    flex-basis: 100px;
+    flex-grow: 3;
+}
+
+.container #uno {
+    flex-grow: 30;
+}
+
+.containerDos{
+    width: 70%;
+    height: 30em;
+    margin: 0 auto;
+    border: 5px solid #003049;
+    display: flex;
+}
+
+.sideBar{
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    background-color: blueviolet;
+    flex: 1 2 15em;
+}
+
+.mainContent{
+    flex: 2 1 40em;
+    
+    background-color: red;
+}
