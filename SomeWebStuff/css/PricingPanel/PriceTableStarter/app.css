@@ -1,0 +1,129 @@
+body{
+    color:#219ebc;
+    font-family: "Open Sans";
+    font-weight: 400;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #219ebc;
+    letter-spacing: 1px;
+}
+
+.panel{
+    font-size: 15px;
+    display: flex;
+    /* height: 35em; */
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: white;
+    border: 0.5em solid white;
+    border-radius: 0.7em;
+    justify-content: center;
+    flex-direction: row;
+    text-transform: uppercase;
+}
+
+.pricing-plan img{
+    max-width: 100%;
+    margin-bottom: 25px;
+}
+
+.pricing-plan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-left: 0.01px solid rgba(128, 128, 128, 0.212);
+    flex-basis: 100%;
+    padding: 25px 50px;
+}
+
+.pricing-header{
+    font-weight: 700;
+    color: rgb(128, 128, 128);
+    margin-bottom: 50px;
+}
+
+.pricing-features li{
+    border-top: 0.01px solid rgba(128, 128, 128, 0.212);
+    border-bottom: 0.01px solid rgba(128, 128, 128, 0.212);
+    text-align: center;
+    padding: 15px 0;
+}
+
+.pricing-features li:nth-of-type(1){
+    border-bottom: none;
+}
+
+.pricing-features{
+    color: #219ebc;
+    margin-bottom: 40px;
+}
+
+.pricing-price{
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.pricing-button{
+    margin: 25px 0;
+    border: 2px solid rgba(128, 128, 128, 0.212);
+    padding: 15px 35px;
+    border-radius: 10px;
+    color: #219ebc;
+    text-decoration: none;
+    transition: background-color 0.5s;
+}
+
+.pricing-button:hover{
+    background-color: #bfc1c2d0;
+    box-shadow: 0 0 20px 2px #219dbc2c;
+}
+
+.pricing-button:focus{
+    background-color: #585d5fd0;
+}
+
+.pricing-button.is-featured{
+    color: white;
+    background-color: #6cadbb;
+}
+
+.pricing-button.is-featured:hover, .pricing-button.is-featured:active{
+    background-color: #395a61;
+}
+
+
+a:visited{
+    color: #219ebc;
+    text-decoration: none;
+}
+
+.pricing-plan:nth-of-type(3){
+    border-right: none;
+}
+
+.pricing-plan:nth-of-type(1){
+    border-left: none;
+    /* border-right: 0.01px solid rgba(128, 128, 128, 0.212); */
+}
+
+@media (max-width: 1030px){
+    .panel{
+        margin: 20px;
+        flex-direction: column;
+        max-width: 60%;
+    }
+    .pricing-plan{
+        border: none;
+        border-top: 0.01px solid rgba(128, 128, 128, 0.212);
+        border-bottom: 0.01px solid rgba(128, 128, 128, 0.212);
+    }
+    .pricing-plan:first-child{
+        border:none;
+    }
+    .pricing-plan:last-child{
+        border:none;
+    }
+}
