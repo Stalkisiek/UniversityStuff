@@ -6,6 +6,10 @@ for(let i = 0; i < 100; i++){
     }
 }
 
-let temp = numbers.filter((x) => {
-    return x % 4 === 0;
-})
+
+const temp = {
+    x: 1,
+    y: 2
+}
+
+[zmienna] = temp;
