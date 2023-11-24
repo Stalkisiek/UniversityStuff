@@ -1,0 +1,16 @@
+.pokemon{
+    display: inline-flex;
+    flex-direction: column;
+    padding: 0px;
+    /* margin: 0.5rem; */
+}
+
+.pokemon img{
+    display: block;
+    margin: 0;
+}
+
+.pokemon span{
+    align-self: flex-end;
+    /* text-align: center; */
+}
