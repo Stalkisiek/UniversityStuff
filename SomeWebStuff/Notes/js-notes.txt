@@ -1,0 +1,201 @@
+***Basics***
+
+**Running**
+<script src="{link}"> </> - at the end of a body
+
+**Types**
+number
+string 
+boolean
+null
+undefined
+** - power
+NaN - Not a number
+
+**Variebles**
+let 
+const 
+var
+
+**Methods**
+
+*string*
+.length
+.toUpperCase()
+.toLowerCase()
+.trim() - deletes white spaces from start and end
+.indexOf({element}) - returns position of element
+.slice({start index}) - substring from first element to end
+.slice({start index}, {end index}) - substring from start to end index
+.replace({el1}, {el2}) - changes {el1} to {el2}
+let temp = `text ${something}`;
+
+*number*
+parseInt({varieble}) - string to int conversion
+
+*arrays*
+.length
+.push( {el} )
+.pop()
+.shift() - deletes element from the front
+.unshift( {el} ) - adds element to the front
+.concat({arr2}) - connects arrays
+.include({el}) - checks if element exists
+.indexOf({el}) - index of element. If doesn't exists then -1
+.reverse
+
+.slice( {start}, {end} ) - returns arrays from start to end
+.splice( {start}, {howManyDelete}, {whatToAdd})
+.sort()
+.every(func) - checks if every element returns true for function
+.some(func) - checks if even one element returns true for function
+
+.forEach(func)
+.map(func) - works the same as forEach but return array with values
+.filter(func) - return array with values that returned true
+
+*Math*
+.PI 
+.floor({nr})
+.ceil({nr})
+.random({nr}) - random number between 0 and 1
+
+*decisions*
+=== - checks also type
+
+*other*
+console.log()
+console.error()
+console.warn()
+alert() - popup window
+propmpt() - popup window with input option
+let input = prompt();
+
+***Little advanced***
+
+**Object Literals**
+const {name} = {
+    {prop name} : {value},
+    {prop name} : {value},
+};
+{name}.{property} = {value};
+
+*Methods*
+Object.keys({object name}) - returns array with all keys
+Object.values({object name}) - returns array with all values
+Object.entries({object name}) - return array with all keys&values
+
+
+**Loops**
+for(let {name} of {arr}) - forEach for array
+for(let {name} in {object}) - forEach for objects
+
+**Functions**
+
+*declaration*
+function {name}({args}){
+    ///
+}
+
+*inside objects*
+const obj = {
+    func: function(){
+
+    }
+}
+OR 
+const obj = {
+    func(){
+
+    }
+}
+
+*this* 
+this. - for getting stuff inside of object 
+
+*try&catch*
+try{
+ // Test 
+}
+catch (e) {
+ // What to do if error
+}
+
+*arrow functions*
+() => {
+
+}
+
+*timeout*
+setTimeout( func, {time} ) - starts function after certain time
+setInterval( func, {time })
+
+***DOM***
+
+**Document**
+document. - inside of it DOM functions and elements. Used to get html and css
+
+**Selecting**
+.getElementById("{id}")
+.getElementByTagName("{type}") - h1,img etc.
+.getElementByClassName("{clas}")
+
+.querySelector("{css name}")
+.querySelectorAll("{css name}")
+# - id
+. - class
+nth-of-type
+
+**Text**
+.innerText - whats visible on user end 
+.textContent - everything what is written in html 
+.innnerHTML - text with <br> and all sorts of html objects
+
+**Style**
+.style - go to style of element
+.getComputedStyle({element}).{property} - returns value of style property
+
+**Clases**
+.classList - objects to access class related methods 
+.add({name}) 
+.remove({name})
+.toggle({}) - switches between adding and removing class
+
+**Family tree** 
+.parentElement - return parent 
+.children - return list with children
+.nextElementSibling - return next sibling 
+.previousSibling - return previous sibling
+
+**Creating elements**
+.createElement("{type}")
+.appendChild(element) - adds child to end of target
+.append(element) - adds sibling after target
+.prepend(element) - adds sibling before target
+
+.insertAdjacentElement( {beforebegin/afterbegin/beforeend/afterend}, element)
+.remove()
+
+***DOM Events***
+.addEventListener( "{type}", func)
+
+**Event types**
+click
+dbclick
+keydown
+keyup
+submit
+change - input:t, after exiting window
+input - input:t, constantly
+
+**Event object**
+.addEventListener("{type}",func(e)) - can catch event object as an argument
+e.key - key name
+e.code - key full code
+e.preventDefault() - stops normal behaviour
+e.stopPropagation() - turns of all other events for this object (not including executed one)
+e.target - what inside element was selected insite target
+
+**Additional**
+this - means element that eventListener was used on. Can create functions using this
+{input element}.value - returnes value inside input element
