@@ -1,0 +1,113 @@
+***Basics***
+
+**Basic patern**
+selector{
+    property: value;
+}
+<link href="{link to css}"> - inside head 
+
+**Selectors**
+{type} - e.g. h1, img
+#{id} - #cat
+.{class} - .cats
+
+*combinations*
+{type1} {type2} - every {type2} inside {type1} 
+{type1} + {type2} - every {type2} adjacent to {type1} 
+{type1} > {type2} - every {type2} directly under {type1}
+
+*more*
+{type}[atribute={value}] 
+{type}:hover
+{type}:active
+{type}:focus
+{type}:nth-of-type(value/$n)
+
+**Basic properties** 
+color - text color 
+background-color
+text-align - text position
+font-weight - font thickness (400-normal; 700-bolded)
+text-decoration - underlines, overlines etc.
+line-height 
+letter-spacing
+font-family - used font. Can create family as a backup -> font-family: x,y; 
+cursor - changes cursor appearance
+
+**Colors**
+names - red, blue etc.
+rbg - rbg(x,y,z)
+hex - #000000
+
+**Sizes**
+px
+em - scalar. The same as parent
+rem - the same as body
+% - relative. Doesn't always work
+
+***Box model***
+
+**Properties**
+*basic*
+width
+height
+padding: {px} / {px,px} / {px,px,px,px} - inside
+margin: {px} / {px,px} / {px,px,px,px} - outside
+
+*border*
+border: {width} {style} {color}
+
+border-width - border thickness
+border-color
+border-style - solid/dotted
+border-radius - specifies the rounding
+box-sizing - decides if border should go outside box. values -> border box/none
+
+***Display***
+*basic values*
+none - hides element
+block
+inline
+inline-block - just as inline but with working margin
+
+**Position**
+static - basic 
+relative - can be moved
+absolute - deleted from file flow. Position depends on parent
+fixed - Position depends on parent. Stays in the same place on monitor 
+sticky - firsty as static. After scroll as fixed
+
+top/bottom/left/right
+
+**Shadows**
+box-shadow: {x} {y} {blur rad} {spread rad} {color}
+
+**Background**
+background-image: url({link})
+background-size: cover - max,cuts/contain - max,doesnt cut/%
+background: url("link") no-repeat center/cover 
+
+**FlexBox**
+display: flex
+
+*properties*
+flex-direction: row/row-reversed/column/column-reversed
+justify-content: start/end/center/space-between/space-evenly <- main axis
+align-items: start/end/center <- cross axis
+flex-wrap: nonewrap/wrap - decides if they should create new line or squeze 
+
+flex: {grow} {shrink} {basis} - how fast grow, shrink and what size to start
+
+*responsive desing*
+@media(min/max-width: {value}){...}
+
+***Transisions***
+**Basic properties**
+transition: {time}/{property} {time}/{property} {time} {delay} - use ',' to make few. NOT IN DIFERENT TRANSITION PROP
+transition-timing-function: linear/ease-in/steps(n)
+transform: rotate({deg})/scale/translate({x},{y})
+
+
+***Usefull***
+colors: coolors.co/palettes/trending
+google fonts: fonts.google.com
