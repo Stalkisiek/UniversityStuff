@@ -1,0 +1,64 @@
+**Basic**
+! <- boilerPlate
+lorem <- creates lorem text
+
+**Types**
+<h1> ... <h2> </> - headers
+<p> </p> - paragraph
+<b> </b> - bolded
+<i> </i> - italics
+<a href="{link}"> </> - anchortag
+<img src="{link} alt={descripion}"> - image 
+<ul> </> - unorganised list
+<ol> </> - organised list
+<li> </> - list element
+
+**More Types**
+<hr> - staright line
+<br> - makes '\n'
+
+**Tables**
+<table> </> - makes table
+<tr> </> - makes row
+<th> </> - single header cell
+<td> </> - single data cell
+
+**Forms**
+<form action="{adres}"> </> - creates form
+<input type="" name="{used for sending data}" placeholder="{shows on empty input}"> </> - creates input
+
+*input types*
+text - textbox
+password - textbox but with hidden input
+number - texbox for numbers
+checkbox - checkbox. Additional atribute -> checked
+color - color wheel
+radio - only one from group can be selected. Conected by {name}. value={return value}
+range - slider. Additional atributes -> min & max
+
+*buttons*
+<button type="{submit/button}"> </> - creates button
+
+*select*
+<select> </> - popup window for choosing. 
+<option value="{return value}"> </> - creates option to select
+
+*additional atributes*
+required 
+maxLength & minLength
+
+**divs**
+<div id=""> </> - makes block element
+<span id=""< </> - makes span element
+
+<main> </> - alt to div
+<header> - alt to div
+<nav> - alt to div
+<footer> - alt to div
+
+**Emmet**
+> - makes children
++ - makes sibling
+* - makes few of one element
+$ - automatic numeration 
+ex -> nav>ul>li*5>a[href=hi$]{Click here}
