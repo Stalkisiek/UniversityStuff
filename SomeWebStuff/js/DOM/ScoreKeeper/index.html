@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="temp.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <img src="./istockphoto-502189498-612x612.jpg">
+        <span id="title">Ping pong Score Keeper</span>
+        <div id="main">
+            <h2 id="score">0 to 0</h2>
+            <p id="instruction">Use the buttons below to keep score.</p>
+            <label for="rounds" id="roundsLabel">Playing to</label>
+            <select name="rounds" id="rounds">
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5" selected>5</option>
+                <option value="6">6</option>
+            </select>
+            <div class="buttons">
+                <button id="b1">+1 Player One</button>
+                <button id="b2">+1 Player Two</button>
+                <button id="b3">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="temp.js"></script>
+</body>
+
+</html>

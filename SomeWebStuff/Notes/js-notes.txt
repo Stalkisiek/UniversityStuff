@@ -3,6 +3,8 @@
 **Running**
 <script src="{link}"> </> - at the end of a body
 
+BULMA is quite good
+
 **Types**
 number
 string 
