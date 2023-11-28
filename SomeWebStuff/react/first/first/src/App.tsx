@@ -1,26 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Message from "./Message";
+import ListGroup from "./Components/ListGroup";
+import React from "react";
+
+function onSelectItem(str:string) : void {
+    console.log(str);
+}
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    let arr = ["One", "Two", "Six"];
+    const arr2 = ["Cat1", "Cat2", "Cat3"];
+    return <div><ListGroup items={arr} heading={"Numbers"} onSelectItem={(str : string) => {console.log(str)}}/>
+        <ListGroup items={arr2} heading={"Cats"} onSelectItem={onSelectItem}></ListGroup>
+    </div>;
 }
 
 export default App;

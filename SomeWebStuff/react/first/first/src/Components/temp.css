@@ -1,0 +1,9 @@
+.list-group-item.active{
+    transition: background-color 0.5s;
+    /*background-color: red;*/
+}
+
+.list-group-item{
+    transition: background-color 0.5s;
+    /*background-color: blue;*/
+}
