@@ -1,19 +1,17 @@
-import Message from "./Message";
-import ListGroup from "./Components/ListGroup";
 import React, {useState} from "react";
-import BootButton from "./Components/BootButton";
-import Alert from "./Components/Alert";
-
-function randomNumber(max: number){
-
-}
+import './Components/temp.css'
+import {NumberSpan} from "./Components/NumberSpan";
+import {GetRandomButton} from "./Components/GetRandomButton";
 
 function App() {
     const [number, setNumber] = useState(0);
+
+    //setInterval(onRandomClick, 10000);
+
     return (
         <div>
-            <div></div>
-            <div></div>
+            <NumberSpan number={number}/>
+            <GetRandomButton onClick={(v) => setNumber(v)}>Generise number!</GetRandomButton>
         </div>
     );
 }
