@@ -1,17 +1,20 @@
 import Message from "./Message";
 import ListGroup from "./Components/ListGroup";
-import React from "react";
+import React, {useState} from "react";
+import BootButton from "./Components/BootButton";
+import Alert from "./Components/Alert";
 
-function onSelectItem(str:string) : void {
-    console.log(str);
+function randomNumber(max: number){
+
 }
 
 function App() {
-    let arr = ["One", "Two", "Six"];
-    const arr2 = ["Cat1", "Cat2", "Cat3"];
-    return <div><ListGroup items={arr} heading={"Numbers"} onSelectItem={(str : string) => {console.log(str)}}/>
-        <ListGroup items={arr2} heading={"Cats"} onSelectItem={onSelectItem}></ListGroup>
-    </div>;
+    const [number, setNumber] = useState(0);
+    return (
+        <div>
+            <div></div>
+            <div></div>
+        </div>
+    );
 }
-
 export default App;
