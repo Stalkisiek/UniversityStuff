@@ -1,0 +1,17 @@
+body{
+    text-size: 30px;
+}
+
+li{
+    text-size: 2em;
+}
+
+ul > li:hover{
+    /*text-decoration: line-through;*/
+    cursor: pointer;
+}
+
+.lsclicked{
+    text-decoration: line-through;
+    cursor: revert;
+}

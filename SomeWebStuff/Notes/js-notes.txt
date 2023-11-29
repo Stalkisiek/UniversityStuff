@@ -201,3 +201,9 @@ e.target - what inside element was selected insite target
 **Additional**
 this - means element that eventListener was used on. Can create functions using this
 {input element}.value - returnes value inside input element
+
+************
+************
+Gift for ABSBSBDBASBDBASBDSABDBSAB
+          ************
+          ************
