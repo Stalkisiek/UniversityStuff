@@ -202,8 +202,7 @@ e.target - what inside element was selected insite target
 this - means element that eventListener was used on. Can create functions using this
 {input element}.value - returnes value inside input element
 
-************
-************
-Gift for ABSBSBDBASBDBASBDSABDBSAB
-          ************
-          ************
+Aserting 50mg - 4 miesiące
+Ketrel 25mg - 3 miesiące (spanko)
+Welbox 150mg - DAMN PONAD ROK. JA NIE WIEDZIAŁEM ŻE TAK DŁUGO ZAŻYWAŁEM 
+Dobroson 7.5 mg - z 3 miesiące
